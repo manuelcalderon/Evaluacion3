@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+	<script type="javascript" src="js/valida.js"></script>
+	<script type="javascript" src="validar.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Readme.ico">
+
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">Inicio</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="listarcapacitaciones.html">Listado Capacitaciones</a>
+  <a href="listadousuarios.html">Listado Usuarios</a>
+  <a href="listadoasesorias.html">Listado Asesorias</a>
+  <a href="listadovisitas.html">Listado Visitas</a>
+  <a href="listadopago.html">Listado Pago</a>
+  <a href="reportes.html">Reportes</a>
+  <a href="login.html">Ingresar</a>
+</div>
+
+
+<h1>Ingresar Pago</h1>
+    
+<form name="payForm" onsubmit="return validate()" method="post">
+   <label for="mont">Monto</label><br>
+   <input type="text" id=error name="mont"><br>
+   <label for="email">Mes:</label><br>
+   <select name="month_list">
+        <option>Enero</option>
+	    <option>Febrero</option>
+        <option>Marzo</option>
+        <option>Abril</option>
+	    <option>Mayo</option>
+        <option>Junio</option>
+        <option>Julio</option>
+	    <option>Agosto</option>
+        <option>Septiembre</option>
+        <option>Octubre</option>
+	    <option>Noviembre</option>
+	    <option>Diciembre</option>
+    </select><br>
+   <label for="year">Año:</label><br>
+   <select name="year_list">
+        <option selected="yes">2020</option>
+        <option>2019</option>
+        <option>2018</option>
+   </select><br>
+   <label for="rut">Rut cliente:</label><br>
+   <input type="text" name="rut" id=error><br>
+   <input type="submit" value="Submit"><br>
+</form> 
+
+   <label id="fecha" for="fecha">fecha :</label><br>
+   <script>
+        var d = new Date();
+        document.getElementById("fecha").innerHTML = d;
+    </script>            
+</body>
+</html>
